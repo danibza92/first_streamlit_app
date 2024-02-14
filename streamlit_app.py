@@ -30,3 +30,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page. Pero mostramos la tabla filrada de fruits to show y no el dataframe completo de my_fruit_list
 streamlit.dataframe(fruits_to_show)
+
+# read from a api
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
