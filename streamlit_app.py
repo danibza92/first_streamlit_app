@@ -42,3 +42,6 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 # Se normaliza en formato tabla el archivo de JSON que viene de la llamada a la api de fruityvice
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
+# se pintq el df obtenido
+streamlit.dataframe(fruityvice_normalized)
+
