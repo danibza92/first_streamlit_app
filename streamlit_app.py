@@ -50,7 +50,7 @@ try:
       streamlit.dataframe(fruityvice_normalized)
 
 except URLError as e:
-setreamlit.error()
+streamlit.error()
 
 streamlit.stop()
 
