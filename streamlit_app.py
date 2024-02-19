@@ -55,7 +55,7 @@ my_data_rows= my_cur.fetchall()
 streamlit.header("The list contains:")
 streamlit.dataframe(my_data_rows)
 
-fruits_selected = streamlit.multiselect("Add some fruits:", list(my_fruit_list.index)
+fruits_selected = streamlit.multiselect("Add some fruits:", list(my_fruit_list.index))
 
 
 
